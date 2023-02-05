@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <title>COMIDA</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <!-- SECCION INICIO -->
+    <section id="inicio">
+      <header>
+        <div class="contenido-header">
+          <div class="logo">
+            <h1>Es saludable?</h1>
+          </div>
+          <nav id="nav">
+            <ul>
+              <li>
+                <a href="#inicio" onclick="seleccionar()">
+                  <i class="fa-solid fa-house"></i>
+                  <span>Inicio</span>
+                </a>
+              </li>
+              <li>
+                <a href="#sabores" onclick="seleccionar()">
+                  <i class="fa-solid fa-ice-cream"></i>
+                  <span>Sabores</span>
+                </a>
+              </li>
+              <li>
+                <a href="#platos" onclick="seleccionar()">
+                  <i class="fa-solid fa-utensils"></i>
+                  <span>Platos</span>
+                </a>
+              </li>
+              <li>
+                <a href="#blog" onclick="seleccionar()">
+                  <i class="fa-solid fa-pen"></i>
+                  <span>Blog</span>
+                </a>
+              </li>
+              <li>
+                <a href="#contacto" onclick="seleccionar()">
+                  <i class="fa-solid fa-comments"></i>
+                  <span>Contacto</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="social">
+            <a href="tel:+34-684-16-76-34">
+              <i class="fa-solid fa-phone"></i>+34-684-16-76-34
+            </a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          <div class="nav-responsive" id="bar" onclick="mostrarOcultarMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </header>
+      <!-- Carrsl -->
+      <div class="carrusel">
+        <div
+          class="gallery js-flickity"
+          data-flickity-options='{ "wrapAround":true, "pageDots": false, "autoPlay": true}'
+        >
+          <div class="gallery-cell">
+            <img src="imgfoto/img1.jpg" alt="" />
+          </div>
+          <div class="gallery-cell">
+            <img src="imgfoto/img2.jpg" alt="" />
+          </div>
+          <div class="gallery-cell">
+            <img src="imgfoto/img3.jpg" alt="" />
+          </div>
+          <div class="gallery-cell">
+            <img src="imgfoto/img4.jpg" alt="" />
+          </div>
+        </div>
+        <div class="info">
+          <h2>Comidas exquistias para el paladar</h2>
+          <p>¿que aportan de bueno?</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION SABORES -->
+    <section id="sabores">
+      <h2>Sabores</h2>
+      <div class="fila">
+        <div class="item">
+          <div class="icono">
+            <img src="imgfoto/img11.jpg" alt="" />
+          </div>
+          <div class="info">
+            <h3>Ensaladas</h3>
+            <p>
+              Las ensaladas pueden ser una fuente de vitaminas, minerales y
+              fibra que son esenciales para una dieta equilibrada.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="icono">
+            <img src="imgfoto/img12.jpg" alt="" />
+          </div>
+          <div class="info">
+            <h3>Torta</h3>
+            <p>
+              El chocolate es un ingrediente que contiene compuestos naturales
+              que son buenos para la salud, como la teobromina y la anandamina.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="icono">
+            <img src="imgfoto/img8.jpg" alt="" />
+          </div>
+          <div class="info">
+            <h3>Hamburguesas</h3>
+            <p>
+              La hamburguesa puede ser una fuente de proteínas y otros
+              nutrientes esenciales, como hierro y vitaminas B, dependiendo de
+              los ingredientes que se utilicen.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="fila">
+        <div class="item">
+          <div class="icono">
+            <img src="imgfoto/img13.jpg" alt="" />
+          </div>
+          <div class="info">
+            <h3>Helados</h3>
+            <p>
+              Los helados son una opción para refrescarse en días calurosos y
+              pueden ayudar a hidratar el cuerpo.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="icono">
+            <img src="img/sabor5.png" alt="" />
+          </div>
+          <img src="imgfoto/img7.jpg" alt="" />
+          <div class="info">
+            <h3>Pastas</h3>
+            <p>
+              Las pastas son una fuente de carbohidratos complejos que
+              proporcionan energía a largo plazo y ayudan a mantener una
+              digestión saludable.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="icono">
+            <img src="imgfoto/galletas.jpg" alt="" />
+          </div>
+          <div class="info">
+            <h3>Galletas</h3>
+            <p>
+              Las galletas pueden ser una opción para satisfacer los antojos de
+              dulces y mejorar el estado de ánimo.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <button>Ver Más</button>
+    </section>
+
+    <!-- SECCION PLATOS -->
+    <section id="platos">
+      <h2>Platos "saludables"</h2>
+
+      <div class="fila">
+        <div class="item">
+          <img src="comida/mani.jpg" alt="" />
+          <p>Sopa de mani</p>
+        </div>
+        <div class="item">
+          <img src="comida/paella.jpg" alt="" />
+          <p>Paella</p>
+        </div>
+        <div class="item">
+          <img src="comida/piquemacho.jpg" alt="" />
+          <p>piquemacho</p>
+        </div>
+      </div>
+      <div class="fila">
+        <div class="item">
+          <img src="comida/tacos.jpg" alt="" />
+          <p>tacos mexicanos</p>
+        </div>
+        <div class="item">
+          <img src="comida/ramen.jpg" alt="" />
+          <p>ramen chino</p>
+        </div>
+        <div class="item">
+          <img src="comida/pexels-rené-roa-12261094.jpg" alt="" />
+          <p>pollo con ensalada</p>
+        </div>
+      </div>
+
+      <button>Ver Más</button>
+    </section>
+
+    <!--BLOG -->
+    <section id="blog">
+      <h2>Blog</h2>
+      <div
+        class="galeria-blog js-flickity"
+        data-flickity-options='{ "wrapAround":true, "pageDots": true}'
+      >
+        <div class="gallery-cell">
+          <div class="item">
+            <div class="foto">
+              <img src="chef/chef.jpg" alt="" />
+            </div>
+            <div class="info">
+              <h3>El arte de cocinar</h3>
+              <p>
+                El arte de cocinar es la práctica de crear platos deliciosos y
+                presentables usando habilidades culinarias, conocimientos y
+                técnicas de cocina. Es una combinación de ciencia y creatividad
+                que involucra la selección de ingredientes de calidad, la
+                preparación de alimentos de manera efectiva y la presentación
+                atractiva de los platos.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-cell">
+          <div class="item">
+            <div class="foto">
+              <img src="chef/chef2.jpg" alt="" />
+            </div>
+            <div class="info">
+              <h3>Cualidades de un chef</h3>
+              <p>
+                La pasión por la cocina es fundamental para ser un buen
+                cocinero. Es importante amar lo que se hace y estar
+                constantemente motivado por aprender y mejorar.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-cell">
+          <div class="item">
+            <div class="foto">
+              <img src="chef/chef3.jpg" alt="" />
+            </div>
+            <div class="info">
+              <h3>Tendencia de la cocina del 2021</h3>
+              <p>
+                La tendencia en la cocina es hacia una alimentación más
+                saludable y sostenible, con un enfoque en ingredientes frescos,
+                orgánicos y locales.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button>Leer Más</button>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+      <div class="fila">
+        <div class="col">
+          <h1>Es saludable?</h1>
+        </div>
+        <div class="col">
+          <h3>Menú</h3>
+          <a href="#inicio">Inicio</a>
+          <a href="#sabores">Sabores</a>
+          <a href="#sabores">Platos</a>
+          <a href="#sabores">Blog</a>
+        </div>
+        <div class="col">
+          <h3>Integrante</h3>
+          <a href="#">Natalia Melgarejo Balderas</a>
+        </div>
+        <div class="col">
+          <h3>Social Media</h3>
+          <div class="media">
+            <i class="fa-brands fa-twitter"></i> <a href="#">Twitter</a>
+          </div>
+          <div class="media">
+            <i class="fa-brands fa-instagram"></i> <a href="#">Instagram</a>
+          </div>
+        </div>
+        <div class="col">
+          <h3>Contacto</h3>
+          <input type="text" placeholder="Tu correo" />
+          <input type="submit" class="enviar" />
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
